@@ -34,7 +34,7 @@ if __name__ == '__main__':
 
     if args.training:
         print("training model")
-        n = 15
+        n = 20
         epoch = 3
         df = pd.read_csv(args.train_input, header=None, names=["open", "high", "low", "close"])
         dt = pd.read_csv(args.test_input, header=None, names=["open", "high", "low", "close"])
@@ -80,7 +80,7 @@ if __name__ == '__main__':
 
     elif args.predict:
         print("predicting and get output.csv")
-        n = 15
+        n = 20
         model = load_model(args.model_input)
         df = pd.read_csv(args.train_input, header=None, names=["open", "high", "low", "close"])
         dt = pd.read_csv(args.test_input, header=None, names=["open", "high", "low", "close"])
