@@ -28,5 +28,5 @@ python trader.py -t --train_input ".\training.csv" --test_input "./testing.csv" 
 * Predicting with the model and output csv file
 ```python
 #Example
-python trader.py -p --train_input ".\training.csv" --test_input "./testing.csv" --output "output.csv" --model_input ".\modeln_15.h5"
+python trader.py -p --train_input ".\training.csv" --test_input "./testing.csv" --output "output.csv" --model_input ".\model_n15.h5"
 ```
